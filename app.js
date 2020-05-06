@@ -61,7 +61,7 @@ app.get("/results", (req, res) => {
             const child = JSON.parse(body);
 
             if (child.data.children.length == 0) {
-                res.render("error");
+                res.redirect("/error");
             } else {
                 res.render("results", { child: child });
 
@@ -70,6 +70,10 @@ app.get("/results", (req, res) => {
         }
     });
 
+});
+
+app.get("/error", (req, res) => {
+    res.render("error");
 });
 
 app.listen(process.env.PORT || 3000, () => {
