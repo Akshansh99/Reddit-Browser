@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit Hot Posts</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>
+        <%= `${sub}'s` %> TOP POSTS</h1>
+
+    <form action="/" method="GET">
+        <input type="text" placeholder="Subreddit" name="subreddit">
+        <button>Search</button>
+    </form>
+
+    <ul class="big">
+        <% child.data.children.forEach(child=>{ %>
+            <li class="box">
+                <%= child.data.title %>
+                    <br>
+                    <a href=" https://reddit.com +<% child.data.permalink %>  ">Comments</a>
+            </li>
+            <% }); %>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+<h1>Results page</h1>
+
+
+
+<% child.data.children.forEach((kid)=>{ %>
+    <li>
+        <a href="https://www.reddit.com<%= kid.data.url %>">
+            <%= kid.data.display_name_prefixed %>
+        </a>
+    </li>
+    <% }) %>
