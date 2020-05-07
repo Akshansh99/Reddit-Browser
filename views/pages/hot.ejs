@@ -1,0 +1,16 @@
+<%- include ('../partials/header') %>
+
+    <div class="container-page">
+        <h1 class="head">
+            HOT
+        </h1>
+
+
+        <% child.data.children.forEach(kid => { %>
+            <li>
+                <%= kid.data.title %>
+            </li>
+            <% }); %>
+
+    </div>
+    <%- include ('../partials/footer') %>

@@ -1,0 +1,13 @@
+<%- include ("../partials/header.ejs") %>
+
+    <div class="container-page">
+        <h1 class="head">RISING</h1>
+
+        <% child.data.children.forEach(kid => { %>
+            <li>
+                <%= kid.data.title %>
+            </li>
+            <% }); %>
+
+    </div>
+    <%- include ("../partials/footer.ejs") %>

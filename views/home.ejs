@@ -1,6 +1,11 @@
-<h1>Home Page</h1>
+<%- include ("partials/header.ejs") %>
 
-<form action="/results" method="GET">
-    <input type="text" placeholder="subreddit" name="sub">
-    <button>Search</button>
-</form>
+
+    <h1>Home Page</h1>
+
+    <form action="/results" method="GET">
+        <input type="text" placeholder="subreddit" name="sub">
+        <button>Search</button>
+    </form>
+
+    <%- include ("partials/footer.ejs") %>

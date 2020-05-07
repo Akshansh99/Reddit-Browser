@@ -1,11 +1,55 @@
-<h1>Results page</h1>
+<%- include ("partials/header.ejs") %>
+
+
+    <h1>Results page</h1>
 
 
 
-<% child.data.children.forEach((kid)=>{ %>
-    <li>
-        <a href="https://www.reddit.com<%= kid.data.url %>">
+    <% child.data.children.forEach((kid)=>{ %>
+
+        <div>
             <%= kid.data.display_name_prefixed %>
-        </a>
-    </li>
-    <% }) %>
+        </div>
+
+        <div class="container">
+
+            <form action="/hot" method="GET">
+                <input name="kid" type="hidden" value="<%=kid.data.url.trim()%>">
+
+                <button>
+                    HOT
+            </button>
+
+                </li>
+            </form>
+
+            <form action="/top" method="GET">
+                <input name="kid" type="hidden" value="<%=kid.data.url.trim()%>">
+                <button>
+                    TOP
+            </button>
+
+
+            </form>
+
+            <form action="/rising" method="GET">
+                <input name="kid" type="hidden" value="<%=kid.data.url.trim()%>">
+                <button>
+                    RISING
+            </button>
+            </form>
+
+            <form action="/new" method="GET">
+                <input name="kid" type="hidden" value="<%=kid.data.url.trim()%>">
+                <button>
+                    NEW
+            </button>
+            </form>
+
+
+        </div>
+        <br>
+        <% }) %>
+
+
+            <%- include ("partials/footer.ejs") %>
