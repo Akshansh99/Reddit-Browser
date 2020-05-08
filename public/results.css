@@ -35,6 +35,7 @@ button {
     border: none;
     cursor: pointer;
     font-weight: 600;
+    outline: none;
 }
 
 @media (max-width: 500px) {
