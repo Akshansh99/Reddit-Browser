@@ -34,3 +34,25 @@
     color: darkgreen;
     margin-right: 10px;
 }
+
+.img-page {
+    overflow: hidden;
+}
+
+img {
+    max-width: 700px;
+    max-height: 500px;
+    border-radius: 2px;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin: 0 auto; */
+}
+
+@media (max-width:600px) {
+    img {
+        max-width: 250px;
+        max-height: 400px;
+    }
+}

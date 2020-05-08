@@ -15,6 +15,11 @@
                 <a class="link-page" href="https://www.reddit.com<%=kid.data.permalink%>">
                     <%= kid.data.title %>
                 </a>
+                <% if(kid.data.post_hint==="image"){ %>
+                    <div class="img-page">
+                        <img src="<%=kid.data.url%>">
+                    </div>
+                    <% } %>
             </div>
             <% }); %>
 
