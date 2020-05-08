@@ -1,12 +1,20 @@
 <%- include ("../partials/header.ejs") %>
 
     <div class="container-page">
-        <h1 class="head">RISING</h1>
+        <h1 class="head">
+            <%= child.data.children[0].data.subreddit_name_prefixed %> - RISING</h1>
 
         <% child.data.children.forEach(kid => { %>
-            <li>
-                <%= kid.data.title %>
-            </li>
+            <div class="post-page">
+                <div class="ups">
+                    <i class="fa fa-thumbs-up" aria-hidden="true">
+                    <%= kid.data.ups %> 
+                 </i>
+                </div>
+                <a class="link-page" href="https://www.reddit.com<%=kid.data.permalink%>">
+                    <%= kid.data.title %>
+                </a>
+            </div>
             <% }); %>
 
     </div>

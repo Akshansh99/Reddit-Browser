@@ -108,7 +108,7 @@ app.get("/new", (req, res) => {
         if (!error && response.statusCode == 200) {
             const child = JSON.parse(body);
 
-            res.render("pages///new", { child: child });
+            res.render("pages/new", { child: child });
         }
     });
 });

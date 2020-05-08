@@ -1,0 +1,36 @@
+.container-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: normal;
+    width: 75%;
+    margin-left: 50px;
+}
+
+.post-page {
+    margin-bottom: 30px;
+    border: 1px solid black;
+    padding: 20px 30px;
+    border-radius: 8px;
+    background-color: #7f7182;
+    border: 5px solid rgba(128, 128, 128, 0.8);
+    -webkit-box-shadow: 9px 9px 11px -10px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 9px 9px 11px -10px rgba(0, 0, 0, 1);
+    box-shadow: 9px 9px 11px -10px rgba(0, 0, 0, 1);
+}
+
+.link-page {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.link-page:hover {
+    text-decoration: underline;
+}
+
+.ups {
+    display: inline;
+    color: darkgreen;
+    margin-right: 10px;
+}

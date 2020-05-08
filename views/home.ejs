@@ -1,11 +1,11 @@
 <%- include ("partials/header.ejs") %>
 
+    <div class="container-home">
+        <h1>Reddit Search</h1>
 
-    <h1>Home Page</h1>
-
-    <form action="/results" method="GET">
-        <input type="text" placeholder="subreddit" name="sub">
-        <button>Search</button>
-    </form>
-
+        <form action="/results" method="GET">
+            <input class="search-home" type="text" placeholder="Search Your Subreddit" name="sub">
+            <button class="btn-home">Search</button>
+        </form>
+    </div>
     <%- include ("partials/footer.ejs") %>
