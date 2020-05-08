@@ -20,6 +20,7 @@
     margin: 0;
     text-indent: 10px;
     border-radius: 8px;
+    outline: none;
 }
 
 .btn-home {
